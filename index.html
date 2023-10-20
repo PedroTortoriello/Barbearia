@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mietto Barbearia</title>
+  <meta name="title" content="Mietto Barbearia">
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner4.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li class="header-top-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <p class="item-title">Telefone :</p>
+
+            <a href="tel:01234567895" class="item-link">+55 (11) 95936-3198</a>
+          </li>
+
+          <li class="header-top-item">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+            <p class="item-title">Horário de Funcionamento :</p>
+
+            <p class="item-text">Segunda - Sexta: 09:00 - 20:00 e Sabádos: 8:00 - 16:00</p>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">
+            Mietto
+          <span class="span">Barbearia</span>
+        </a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>Sobre</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#pricing" class="navbar-link" data-nav-link>Serviços</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#gallery" class="navbar-link" data-nav-link>Equipe</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Contato</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="https://booksy.com/pt-br/instant-experiences/widget/51974" target="_blank" class="btn btn-agenda has-before">
+          <span class="span">Agendar Horário</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-before has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-banner4.png')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">Alcançe o seu Estilo</h1>
+
+          <p class="hero-text">
+            Agende seu horário e conheça nossa barbearia!
+          </p>
+
+          <a href="#pricing" class="btn btn-hero has-before">
+            <span class="span">Veja Nossos Serviços</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">Sobre Nós</h2>
+              <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Deserunt incidunt atque, ut natus reiciendis culpa laborum eligendi deleniti placeat. <br> 
+                Perspiciatis consectetur aliquid reprehenderit vero non qui commodi repellat eaque <br>
+                 explicabo!
+              </p>
+            </div>
+
+            <div class="about__img">
+              <div class="about__img-overlay">
+                <img src="assets/images/img1.png" alt="" class="about-img">
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- 
+        - #PRICING
+      -->
+
+      <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
+        style="background-image: url('./assets/images/hero-banner4.png')">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Valores</h2>
+
+          <div class="pricing-tab-container">
+
+            <ul class="tab-filter">
+
+              <li>
+                <button class="filter-btn" data-filter-btn="shaving">
+                  <div class="btn-icon">
+                    <i class="flaticon-relax" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Cortes</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="beard">
+                  <div class="btn-icon">
+                    <i class="flaticon-massage" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Barba</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="hair">
+                  <div class="btn-icon">
+                    <i class="flaticon-relax" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Cabelo</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="eyebrow">
+                  <div class="btn-icon">
+                    <i class="flaticon-spa" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Sobrancelha</p>
+                </button>
+              </li>
+
+
+            <ul class="grid-list">
+
+              <li data-filter="shaving">
+
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Corte de Cabelo</h3>
+
+                    <p class="card-text">30 - 40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="89">R$40,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="shaving">
+                <div class="pricing-card">
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Corte Freestyle</h3>
+
+                    <p class="card-text">40 - 50 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 45,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="beard">
+                <div class="pricing-card">
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Barba</h3>
+
+                    <p class="card-text">30 - 40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="45">R$ 40,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="beard">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Barboterapia</h3>
+
+                    <p class="card-text">40 - 50 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 60,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="eyebrow">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Sobrancelha</h3>
+                    <h5>Pinça ou Linha</h5>
+
+                    <p class="card-text">15 - 20 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 25,00</data>
+
+                </div>
+              </li>
+
+              
+              <li data-filter="eyebrow">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Sobrancelha</h3>
+                    <h5>Navalha</h5>
+
+                    <p class="card-text">15 - 20 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 15,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="hair">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Hidratação</h3>
+
+                    <p class="card-text">15 - 20 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 20,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="hair">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Luzes</h3>
+
+                    <p class="card-text">30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 90,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="hair">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Platinado</h3>
+                    
+                    <p class="card-text">30 - 40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 40,00</data>
+
+                </div>
+              </li>
+
+              <li data-filter="hair">
+                <div class="pricing-card">
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Relaxamento</h3>
+
+                    <p class="card-text">30 - 40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$ 75,00</data>
+
+                </div>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="section gallery" id="gallery" aria-label="photo gallery">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <h2 class="h2 section-title">Nossa Equipe</h2>
+            </div>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Agendar Horário</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team2.png" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">André</h3>
+
+                  <p class="card-text"></p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team3.png" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Miguel</h3>
+
+                  <p class="card-text"></p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team1.png" width="422" height="550" loading="lazy" alt="team"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Juninho</h3>
+
+                  <p class="card-text"></p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team4.png" width="422" height="550" loading="lazy" alt="team"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Lucas</h3>
+
+                  <p class="card-text"></p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            Mietto
+            <span class="span">Barbearia</span>
+          </a>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nossos Serviços</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nossa Equipe</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Instagram</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list-service">
+
+            <li>
+              <p class="footer-list-title">Serviços</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Corte de Cabelo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Barba</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Sobrancelha</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Hidratação e Relaxamento</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Luzes e Platinado</a>
+            </li>
+
+
+          </ul>
+
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Entrar em contato</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+0123456789" class="contact-link">+55 (11) 95936-3198</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="contact-link">Segunda - Sexta: 09:00 - 20:00 e Sabádos: 8:00 - 16:00</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:support@gmail.com" class="contact-link">support@gmail.com</a>
+            </li>
+
+          </ul>
+
+          <gmp-map center="-23.202877044677734,-47.2973747253418" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="-23.202877044677734,-47.2973747253418" title="My location">
+            </gmp-advanced-marker>
+          </gmp-map>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">Pedro Tortoriello</a>. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKgCrnyu7Rojpnnf5oYqVsb4JHBsCwY24&callback=console.debug&libraries=maps,marker&v=beta">
+  </script>
+</body>
+
+</html>
