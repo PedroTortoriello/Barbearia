@@ -111,7 +111,3 @@ function filterAndOpenCortes() {
     }
   }
 }
-
-window.addEventListener('resize', function() {
-  // Recarregue o mapa ou ajuste suas propriedades conforme necessário
-});
